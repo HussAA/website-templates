@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="https://www.flaticon.com/free-icons/template" title="template icons"/>
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+  <a href="https://www.flaticon.com/free-icons/template" title="template icons">
+    <img alt="icon" src="website-template/src/assets/images/icon.png" width="60" />
   </a>
 </p>
 <h1 align="center">
