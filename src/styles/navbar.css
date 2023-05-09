@@ -1,0 +1,104 @@
+
+
+.offset-fullname{
+    margin-bottom: 5px;
+    transition: 0.2s;
+    font-size: 22pt;
+}
+.offset-fullname:hover {
+    transform: scale(0.95,0.95);
+    cursor:pointer;
+}
+
+/* Collapse Links */
+.navLink{
+    font-size: 20px;
+    color: rgb(104, 104, 104);
+    transition: 0.1s;
+}
+.navLink:hover{
+    color: black;
+}
+.underbarItem{
+    transition: 0.1s;
+}
+.underbarItem:hover{
+    color: rgb(131, 131, 131)
+}
+.show{
+    transition:0.3s ease;
+}
+.collapsing {
+    transition: 0.3s ease;
+}
+/* Navbar Socials */
+.navbar-socials{
+    font-size: 25px;
+    color: black;
+    transition: 0.3s;
+}
+
+
+/* underbar Item */
+.underbarItem{
+    margin-inline: 30px;
+}
+
+
+/* @medias */
+@media (min-width: 768px) {
+    .bar{
+        height: 75px; 
+    } 
+    .offset-fullname{
+        margin-left: 24.1666%;
+    }
+    .social-div{
+        margin-left: 10px;
+    }
+}
+
+@media (max-width:767px) {
+    .shadow-small{
+        box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.17);
+    }
+    .offset-fullname{
+        margin-right: 6%;
+        font-size: 18pt;
+    }
+    .social-div{
+        margin-left: 11px;
+    }
+    .navbar-socials{
+        font-size: 20px;
+    }
+    
+    
+    
+}
+@media (min-width: 991px) {
+    .bar{
+        height: 90px;
+    }
+}
+@media (min-width:1100px) {
+    .offset-fullname{
+        margin-left: 25.1666%;
+    }
+}
+@media (min-width:1400px) {
+    .offset-fullname{
+        margin-left: 26.1666%;
+    }
+    .bar{
+        height: 100px;
+    }
+    .offset-md-35{
+        margin-left: 29.1666%;
+    }
+}
+@media (min-width:1600px) {
+    .offset-fullname{
+        margin-left: 28.1666%;
+    }
+}
