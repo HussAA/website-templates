@@ -1,5 +1,9 @@
 
-
+.Contact-Link{
+    border: 1px solid black;
+    width: 150px;
+    padding: 8px 30px 8px 30px;
+}
 .offset-fullname{
     margin-bottom: 5px;
     transition: 0.2s;

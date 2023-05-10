@@ -13,11 +13,24 @@ import {
 const ContactButton = styled.button`
   padding: 8px 30px 8px 30px;
   color: #e3e3e3;
-  font-size: 16px;
+  font-size: 19px;
   background-color: #0f100f;
   transition: 0.2s;
   &:hover {
     background-color: #333333;
+  }
+`;
+const ContactLink = styled(NavLink)`
+  padding: 3px 20px 3px 20px;
+  color: white;
+  font-size: 16px;
+  background-color: #0f100f;
+  transition: 0.2s;
+  width: fit-content;
+  margin-top: 5px;
+  &:hover {
+    background-color: #333333;
+    color: white;
   }
 `;
 const UnderBar = styled.nav`
@@ -29,12 +42,12 @@ const UnderBar = styled.nav`
 
 const NavbarIndex = () => {
   const [isOpen, setIsOpen] = useState(false);
-//   const toggle = () => setIsOpen(!isOpen);
+  //   const toggle = () => setIsOpen(!isOpen);
   return (
     <>
       <Navbar className="navbar navbar-expand-md bar shadow-small">
         {/* Navbar Brand mobile mode */}
-        <NavbarBrand className="offset-fullname col-7 d-md-none">
+        <NavbarBrand className="offset-fullname d-md-none">
           [Full Name]
         </NavbarBrand>
         {/* Socials web mode */}
@@ -77,7 +90,7 @@ const NavbarIndex = () => {
           [Full Name]
         </NavbarBrand>
         {/* Socials web mode */}
-        <ContactButton className="order-md-3 d-none d-md-block">
+        <ContactButton className="order-md-3 d-none d-md-block text-uppercase">
           Contact Us
         </ContactButton>
         {/* Socials mobile mode */}
@@ -142,15 +155,20 @@ const NavbarIndex = () => {
                 Education
               </NavLink>
             </NavItem>
-
             <NavItem className="navItem">
-              <NavLink className="navLink text-uppercase" href="#Contact">
-                Contact
+              <NavLink className="navLink text-uppercase" href="#Skills">
+                Skills
               </NavLink>
+            </NavItem>
+            <NavItem className="navItem">
+              <ContactLink className="navLink text-uppercase text-nowrap" href="#Contact">
+                Contact Us
+              </ContactLink>
             </NavItem>
           </Nav>
         </Collapse>
       </Navbar>
+
       {/* Under Navbar web mode */}
       <UnderBar className="d-none d-md-block">
         <Nav className="d-flex flex-row justify-content-center fs-5" navbar>
@@ -161,22 +179,22 @@ const NavbarIndex = () => {
           </NavItem>
           <NavItem>
             <NavLink className="underbarItem text-uppercase" href="/">
-              Skills
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink className="underbarItem text-uppercase" href="/">
               Projects
             </NavLink>
           </NavItem>
           <NavItem>
             <NavLink className="underbarItem text-uppercase" href="/">
-              Education
+              Experience
             </NavLink>
           </NavItem>
           <NavItem>
             <NavLink className="underbarItem text-uppercase" href="/">
-              Experience
+              Skills
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink className="underbarItem text-uppercase" href="/">
+              Education
             </NavLink>
           </NavItem>
         </Nav>
